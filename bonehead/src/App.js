@@ -16,7 +16,7 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-          <div className="container">
+          <div className="container-fluid">
             <Jumbotron className="bg-dark text-center">
               <Link className="text-white" to="/"><h1>BONEHEAD</h1></Link>
             </Jumbotron>

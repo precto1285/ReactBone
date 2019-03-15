@@ -5,25 +5,23 @@ import HomeSub from './../Sub/HomeSub';
 export default class Home extends Component {
   render() {
     return (
-      <div className='container'>
-
-        <div className="container">
-          <Row>
-            <Col>
-              <p>Summary:</p>
-              <HomeSub />
-            </Col>
-            <Col>
-              <p>Images:</p>
-              <HomeSub />
-            </Col>
-            <Col>
-              <p>Merchandise:</p>
-              <HomeSub />
-            </Col>
-          </Row>
-        </div>
+      <div className="container-fluid">
+        <Row>
+          <Col>
+            <p>Summary:</p>
+            <HomeSub />
+          </Col>
+          <Col>
+            <p>Images:</p>
+            <HomeSub />
+          </Col>
+          <Col>
+            <p>Merchandise:</p>
+            <HomeSub />
+          </Col>
+        </Row>
       </div>
+
     )
   }
 }
