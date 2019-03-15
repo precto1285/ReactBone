@@ -5,6 +5,7 @@ import { Nav } from 'reactstrap';
 import './App.css';
 import AlbumSongs from './Components/Main/Albums-Songs';
 import Bio from './Components/Main/Bio';
+import Footer from './Components/Main/Footer';
 import Home from './Components/Main/Home';
 import Members from './Components/Main/Members';
 import Photos from './Components/Main/Photos';
@@ -13,28 +14,29 @@ import Videos from './Components/Main/Videos';
 class App extends Component {
   render() {
     return (
-      <Router>
-        <div className="App">
+      <div className="App">
+        <Router>
           <div className="container">
             <Nav className="bg-dark text-white pl-3 py-2">
               <Link className="text-white" to="/"><h3>BONEHEAD</h3></Link>
-              <ul>
-                <li>
+              <div className="collapse navbar-collapse"></div>
+              <ul className="navbar nav">
+                <li className="nav-item mr-3">
                   <Link to="/">Home</Link>
                 </li>
-                <li>
+                <li className="nav-item mr-3">
                   <Link to="/Photos">Photos</Link>
                 </li>
-                <li>
+                <li className="nav-item mr-3">
                   <Link to="/Videos">Videos</Link>
                 </li>
-                <li>
+                <li className="nav-item mr-3">
                   <Link to="/Bio">Biography</Link>
                 </li>
-                <li>
+                <li className="nav-item mr-3">
                   <Link to="/Members">Members</Link>
                 </li>
-                <li>
+                <li className="nav-item mr-3">
                   <Link to="/AlbumSongs">Albums & Songs</Link>
                 </li>
               </ul>
@@ -46,8 +48,12 @@ class App extends Component {
             <Route className="text-white" path='/Videos' component={Videos} exact strict />
             <Route className="text-white" path='/Members' component={Members} exact strict />
           </div>
-        </div>
-      </Router>
+
+        </Router>
+        <Footer>
+
+        </Footer>
+      </div>
     );
   }
 }
