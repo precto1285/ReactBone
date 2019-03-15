@@ -8,7 +8,7 @@ export default class Members extends Component {
     return (
       <div>
         <h1>Members:</h1>
-        <Row>
+        <Row className="my-5 py-5">
           <Col>
             <Member />
           </Col>
