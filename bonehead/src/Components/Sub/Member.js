@@ -5,8 +5,12 @@ const Member = props => {
   return (
     <div className="container">
       <Card>
-        <div className="card-header"></div>
-        <div className="card-body"></div>
+        <div className="card-header">
+          {props.name}
+        </div>
+        <div className="card-body">
+          {props.role}
+        </div>
         <div className="card-footer"></div>
       </Card>
     </div>
