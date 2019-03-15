@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import Route from 'react-router-dom/Route';
-import { Nav } from 'reactstrap';
+import { Jumbotron, Nav } from 'reactstrap';
 import './App.css';
 import AlbumSongs from './Components/Main/Albums-Songs';
 import Bio from './Components/Main/Bio';
@@ -17,8 +17,10 @@ class App extends Component {
       <div className="App">
         <Router>
           <div className="container">
-            <Nav className="bg-dark text-white pl-3 py-2">
-              <Link className="text-white" to="/"><h3>BONEHEAD</h3></Link>
+            <Jumbotron className="bg-dark text-center">
+              <Link className="text-white" to="/"><h1>BONEHEAD</h1></Link>
+            </Jumbotron>
+            <Nav className="bg-dark text-white py-2">
               <div className="collapse navbar-collapse"></div>
               <ul className="navbar nav">
                 <li className="nav-item mr-3">
