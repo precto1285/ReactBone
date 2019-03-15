@@ -12,14 +12,14 @@ class App extends Component {
     return (
       <div className="App">
         <div className="container">
-          <Nav>
+          <Nav className="bg-dark text-white pl-3 py-2">
             <p>Bonehead</p>
           </Nav>
-          <Row>
-            <Jumbotron className="bg primary text-center text-white">
-              <h1>Bonehead</h1>
-            </Jumbotron>
-          </Row>
+
+          <Jumbotron className="bg primary text-center text-white">
+            <h1>BONEHEAD</h1>
+          </Jumbotron>
+
           <Row>
             <Col>
               <Photos />
@@ -36,8 +36,10 @@ class App extends Component {
               <Videos />
             </Col>
           </Row>
-          <Row>
-            <Members />
+          <Row className="bg-dark text-white">
+            <Col className="text-center">
+              <Members />
+            </Col>
           </Row>
         </div>
       </div>
