@@ -6,7 +6,7 @@ export default class Footer extends Component {
     return (
       <div className="container">
         <Jumbotron className="bg-dark text-white text-center my-5">
-          <h1>Copyright &copy; 2019</h1>
+          <h3>Copyright &copy; 2019</h3>
         </Jumbotron>
       </div>
     )

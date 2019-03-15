@@ -44,11 +44,17 @@ class App extends Component {
               </ul>
             </Nav>
             <Route className="text-white" path='/' exact strict component={Home} />
+
             <Route className="text-white" path='/Photos' component={Photos} exact strict />
+
             <Route className="text-white" path='/Bio' component={Bio} exact strict />
+
             <Route className="text-white" path='/AlbumSongs' component={AlbumSongs} exact strict />
+
             <Route className="text-white" path='/Videos' component={Videos} exact strict />
+
             <Route className="text-white" path='/Members' component={Members} exact strict />
+
           </div>
 
         </Router>
