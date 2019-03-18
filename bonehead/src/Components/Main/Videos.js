@@ -5,8 +5,8 @@ export default class Videos extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Videos</h1>
+      <div className="text-center">
+        <h1 className="my-5">VIDEOS:</h1>
         <Video />
       </div>
     )
